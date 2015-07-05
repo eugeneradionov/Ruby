@@ -1,0 +1,415 @@
+<html><head>
+<meta content="text/html; charset=windows-1251" http-equiv=Content-Type>
+<title>ПАЛИТРА КРЫЛА</title>
+<META NAME="Author" LANG="ru" CONTENT="Григорий Иванов">
+<meta name="description" LANG="ru" content="Гигантский архив цветных профилей авиакамуфляжа - более 30000 шт. Ежемесячное обновление - 500 новых изображений. Незаменимый помощник моделистов и любителей авиации.">
+<meta name="keywords" LANG="ru" http-equiv="профиль, камуфляж, схема, окраска, боевой, самолет, вертолет, военный, авиация, картинки, миг, су, сухой, ту, туполев, як, яковлев, ил, ильюшин, ввс, пво, истребитель, бомбардировщик, штурмовик, африка, азия, америка, ирак, бесплатно">
+<META NAME="Reply-To" CONTENT="wpalette@gmail.com"> 
+<link href="/camms/styles2.css" rel="stylesheet" type="text/css">
+<link rel=alternate type=application/rss+xml title="RSS 2.0" href="http://feeds.feedburner.com/wpl_ruxqVw">
+
+</head><body>
+	<center><table BORDER=0 CELLSPACING=0 CELLPADDING=0 width=100% class=table1>
+<tr>
+<td rowspan=2 height=31 width=88><!--LiveInternet logo--><a href="http://www.liveinternet.ru/click" target=liveinternet><img style=filter:Alpha(Opacity=50) src="http://counter.yadro.ru/logo?13.11" border=0 alt="Liveinternet" width=88 height=31></a><!--/LiveInternet--></td>
+<td rowspan=2 height=31 width=88>
+<!--top.airbase.ru-->
+<!--
+<a href="http://top.airbase.ru/"><img style="filter:Alpha(Opacity=50)" src="http://top.airbase.ru/?id=345" width="88" height="31" border="0" alt="AviaTOP" title="Aviation TOP"></a>
+-->
+<!--top.airbase.ru /-->
+</td>
+<td align=left class=para2 width=100%>ПАЛИТРА КРЫЛА</td>
+<td rowspan=2 width=88 height=31><!--Rating@Mail.ru LOGO--><a target=_top href="http://top.mail.ru/jump?from=623022"><img style=filter:Alpha(Opacity=50) src="http://top.list.ru/counter?id=623022;t=210;l=1" border=0 height=31 width=88 alt="Top@Mail.ru"></a><!--/LOGO--></td>
+<td rowspan=2 width=88 height=31><!-- START AVIATION TOP 100 CODE: DO NOT CHANGE WITHOUT PERMISSION --><a href="http://www.avitop.com/aviation/default.asp?UserId=3211" target="_blank"><img style=filter:Alpha(Opacity=50) name="av" src="/camms/gr/avitop10.gif" width="88" height="31" border="0" alt="AVIATION TOP 100"></a><img src="http://serv2.avitop.com/aviation/hitlist.asp?id=3211" height="1" width="1" border="0" alt="Avitop.com"><!-- END AVIATION TOP 100 CODE: --></td>
+<td rowspan=2 width=1>
+<!--begin of Rambler's Top100 code -->
+<a href="http://top100.rambler.ru/top100/"><img src="http://counter.rambler.ru/top100.cnt?963987" alt="" width=1 height=1 border=0></a>
+<!--end of Top100 code-->
+<!--LiveInternet counter--><script language="JavaScript"><!--
+document.write('<img src="http://counter.yadro.ru/hit?r'+
+escape(document.referrer)+((typeof(screen)=='undefined')?'':
+';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+';'+Math.random()+
+'" width=1 height=1 alt="">')//--></script><!--/LiveInternet-->
+<!--Rating@Mail.ru COUNTER--><script language="JavaScript"><!--
+d=document;var a='';a+=';r='+escape(d.referrer)
+js=10//--></script><script language="JavaScript1.1"><!--
+a+=';j='+navigator.javaEnabled()
+js=11//--></script><script language="JavaScript1.2"><!--
+s=screen;a+=';s='+s.width+'*'+s.height
+a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth)
+js=12//--></script><script language="JavaScript1.3"><!--
+js=13//--></script><script language="JavaScript"><!--
+d.write('<img src="http://top.list.ru/counter'+
+'?id=623022;js='+js+a+';rand='+Math.random()+
+'" height=1 width=1>')
+if(js>11)d.write('<'+'!-- ')//--></script><noscript><img
+src="http://top.list.ru/counter?js=na;id=623022"
+height=1 width=1 alt=""></noscript><script language="JavaScript"><!--
+if(js>11)d.write('--'+'>')//--></script><!--/COUNTER-->
+</td>
+</tr>
+<tr><td align=left class=para0>АРХИВ ПРОФИЛЕЙ АВИАКАМУФЛЯЖА v.4.74-new</td></tr>
+</table>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100% class=t3>
+<tr>
+
+<td width=100% align="center" valign="center">
+<br>
+
+
+<style>
+#donate {
+	width: 1000px;
+	background-image: url(/donate/button_donate_uk.gif) ro-repeat;
+	height: 60px;
+}
+
+#donate * {
+border-bottom-width: 0px;
+border-left-width: 0px;
+border-right-width: 0px;
+border-top-width: 0px;
+margin: 0px;
+padding: 0px;
+}
+
+#donate-button {
+	height: 26px;
+	width: 92px;
+	position: relative;
+	top: 18px;
+	left: 0px;
+}
+#donate-sum {
+	height: 50px;
+	width: 430px;
+	position: relative;
+	top: -22px;
+	left: 270px;
+}
+.donate-text {
+	font-size: 10pt;
+	line-height: 12pt;
+	color: #FFFFFF;
+}
+.donate-digits {
+	font-size: 25pt;
+	line-height: 36px;
+	font-weight: bold;
+	color: #FFFFFF;
+	height: 28px;
+}
+#donate-words {
+	height: 20px;
+	width: 1000px;
+	margin-top: -18px;
+	font-size: 8pt;
+}
+.donate-words {
+	font-size: 8pt;
+}
+</style>
+
+<div id="donate">
+  <div id="donate-button" style="z-index:2"><a href="/donate/donate.php?lang=ru"><img src="/donate/donate.gif" alt="Donate!" width="92" height="26" /></a></div> 
+  <!-- donate-button -->
+  <div id="donate-sum" style="z-index:2">
+    <table border="0" cellspacing="0" cellpadding="0">
+      <tr>
+	<td class="donate-text">&#x2022; нужно</td>
+	<td class="donate-text">&#x2022; собрано</td>
+	<td class="donate-text">&#x2022; осталось</td>
+      </tr>
+      <tr>
+	<td class="donate-digits">4500 USD=</td>
+	<td class="donate-digits">466+</td>
+	<td class="donate-digits">4034</td>
+      </tr>
+    </table>
+  <!-- donate-sum -->
+  </div> 
+  <div id="donate-words">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+	<td nowrap="nowrap" class="donate-words">
+МЫ СОБИРАЕМ ДЕНЬГИ НА WP2: НАМ ПОМОГЛИ 30 ПОЖЕРТВОВАНИЙ НА СУММУ 466.29$</td>
+	<td nowrap="nowrap" class="donate-words"><div align="right">
+БОЛЬШОЕ ВАМ СПАСИБО, ДРУЗЬЯ! ...[<a href='/donate/donate.php'>весь список</a>]	</div></td>
+      </tr>
+    </table>
+  </div> <!-- donate-words -->
+  <div id="banner" style="position:relative; top:-78px; left:0px; z-index:1; border:0">
+    <a href="/donate/donate.php?lang=ru">
+    <img src="/donate/button_donate_uk.gif">
+    </a>
+  </div>
+</div> <!-- donate -->
+
+<br>
+<br>
+</td>
+
+</tr>
+</table><a name=top></a>
+<span class=main_menu><a class=main_menu href=/ru/news>Новости</a> | <a class=main_menu href=/ru/cat>Каталог</a> | <a class=main_menu href=/ru/pilots>Пилоты</a> | <a class=main_menu href=/ru/carriers>Авианосцы</a> | <a target=window class=main_menu href=http://www.paper-avia.com/ru/modelz>Модели из бумаги</a> | <a target=window class=main_menu href=http://www.paper-avia.com/ru/bookz>Библиотека</a> | <a class=main_menu href=/ru/markings>Символика</a> | <a class=main_menu href=/ru/camo>Камуфляж</a> | <a class=main_menu href=/ru/photo>Пилотский альбом</a> | <a class=main_menu href=/ru/articles>Статьи</a> | <a class=main_menu href=/ru/links>Ссылки</a> | <a class=main_menu href=/ru/about>О проекте</a> | </span> <a href=/en/ww2/f><img border=0 src=/camms/gr/en.png width=21 height=11 alt="Переключить на английский"></a>
+<br>
+<table BORDER=0 CELLSPACING=0 CELLPADDING=3 WIDTH=100% class=table3>
+<tr><td width=15% valign=top align=center>
+<br>
+<table border=0 cellpadding=0 cellspacing=0 width=130 class=table2>
+<tr><td>
+<table border=0 cellspacing=1 cellpadding=1 width=130>
+<tr><td class=table3 align=center><font color=red size=3><b> ПОДПИШИСЬ!</b></font></td></tr>
+<tr><td class=table3 align=center>
+<table border=0 class=table3>
+<a href=https://www.facebook.com/WingsPalette><IMG src=http://wp.scn.ru/camms/gr/fb.png></a> <a href=https://plus.google.com/105641601620028878513><IMG src=http://wp.scn.ru/camms/gr/gp.png></a> <a href=http://vk.com/wingspalette><IMG src=http://wp.scn.ru/camms/gr/vk.png></a><a href="https://twitter.com/WingsPalette" class="twitter-follow-button" data-show-count="false">Follow Wings Palette</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</table>
+</td></tr>
+<tr><td class=table3 align=center><font color=red size=3><b>СКОРО ОБНОВЛЕНИЕ! </b></font></td></tr>
+</table></td></tr></table>
+<br>
+
+<table border=0 cellpadding=0 cellspacing=0 width=130 class=table2>
+<tr><td>
+<table border=0 cellspacing=1 cellpadding=1 width=130>
+<tr><td class=table1 align=center>
+Поиск по сайту</td></tr>
+<tr><td class=t3 align=justify>
+    <form action="http://www.google.ru/cse" id="cse-search-box">
+        <input type="hidden" name="cx" value="partner-pub-6141657215653160:1mixostc3d7" />
+        <input type="hidden" name="ie" value="windows-1251" />
+	<table border=0 width=130>
+	<tr>
+	<td>
+	<input class=table1 type="text" name="q" size="20" />
+	</td>
+	</tr>
+	<tr>
+	<td class=t3 nowrap>
+	<img src="http://www.google.com/images/poweredby_transparent/poweredby_FFFFFF.gif" alt="Google" />
+        <input class=table1 type="submit" name="sa" value="Поиск" />
+	</td>
+    </form>
+	</tr>
+	</table>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td>
+<td width=70% valign=top align=center>
+<table border=0 cellpadding=0 cellspacing=0 width=100% class=table2>
+<tr><td>
+<table border=0 cellspacing=1 cellpadding=2 width=100%>
+<tr><td class=table1 colspan=2>Архив</td></tr>
+<tr><td class=t3 align=center colspan=2><table BORDER=0 CELLSPACING=0 CELLPADDING=1 width=100% class=t3><tr>
+<td valign=top nowrap width=1%><b>Первая мировая</b><br><a href=/ru/ww1/f>Истребители</a><br><a href=/ru/ww1/b>Бомбардировщики</a><br><a href=/ru/ww1/a>Ударные</a><br><a href=/ru/ww1/t>Транспортные<br>Пассажирские</a><br><a href=/ru/ww1/o>Вспомогательные</a><br><a href=/ru/ww1/h>Гидро</a><br><a href=/ru/ww1/s>Специальные</a><br><a href=/ru/ww1/v>Вертолеты</a></td><td width=1%></td><td valign=top nowrap width=1%><b>Между мировыми</b><br><a href=/ru/ww15/f>Истребители</a><br><a href=/ru/ww15/b>Бомбардировщики</a><br><a href=/ru/ww15/a>Ударные</a><br><a href=/ru/ww15/t>Транспортные<br>Пассажирские</a><br><a href=/ru/ww15/o>Вспомогательные</a><br><a href=/ru/ww15/h>Гидро</a><br><a href=/ru/ww15/s>Специальные</a><br><a href=/ru/ww15/v>Вертолеты</a></td><td width=1%></td><td valign=top nowrap width=1%><b>Вторая мировая</b><br><a class=t3on>Истребители</a><br><a href=/ru/ww2/b>Бомбардировщики</a><br><a href=/ru/ww2/a>Ударные</a><br><a href=/ru/ww2/t>Транспортные<br>Пассажирские</a><br><a href=/ru/ww2/o>Вспомогательные</a><br><a href=/ru/ww2/h>Гидро</a><br><a href=/ru/ww2/s>Специальные</a><br><a href=/ru/ww2/v>Вертолеты</a></td><td width=1%></td><td valign=top nowrap width=1%><b>Холодная война</b><br><a href=/ru/ww3/f>Истребители</a><br><a href=/ru/ww3/b>Бомбардировщики</a><br><a href=/ru/ww3/a>Ударные</a><br><a href=/ru/ww3/t>Транспортные<br>Пассажирские</a><br><a href=/ru/ww3/o>Вспомогательные</a><br><a href=/ru/ww3/h>Гидро</a><br><a href=/ru/ww3/s>Специальные</a><br><a href=/ru/ww3/v>Вертолеты</a></td><td width=1%></td><td valign=top nowrap width=1%><b>Наше время</b><br><a href=/ru/ww4/f>Истребители</a><br><a href=/ru/ww4/b>Бомбардировщики</a><br><a href=/ru/ww4/a>Ударные</a><br><a href=/ru/ww4/t>Транспортные<br>Пассажирские</a><br><a href=/ru/ww4/o>Вспомогательные</a><br><a href=/ru/ww4/s>Специальные</a><br><a href=/ru/ww4/h>Гидро</a><br><a href=/ru/ww4/v>Вертолеты</a><br><a href=/ru/ww4/d>БПЛА</a></td></tr>
+<tr>
+<td colspan=9 align=center>
+<!-- central Google banner start -->
+<script type="text/javascript"><!--
+google_ad_client = "pub-6141657215653160";
+google_alternate_color = "E8ECFF";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+google_ad_channel ="2445466564";
+google_color_border = "000000";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "FFFFFF";
+google_color_text = "FFFFFF";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</td></tr>
+</table></td></tr>
+</table></td></tr></table>
+</td>
+<td width=15% valign=top align=center><br>
+<table border=0 cellpadding=0 cellspacing=0 width=130 class=table2>
+<tr><td>
+<table border=0 cellspacing=1 cellpadding=1 width=130>
+<tr><td class=table1 align=center>Случайный рисунок</b></td></tr>
+<tr><td class=table3 align=center>
+<a href=/ru/ww2/b/344/77> <img width=125 SRC=/camms/ar/344/pics/77_1.jpg border=1 alt="R-313"></a><br></td></tr></table>
+</td></tr></table></td></tr></table>
+<table border=0 cellpadding=0 cellspacing=0 width=99% class=table2>
+<tr><td><table border=0 cellspacing=1 cellpadding=3 width=100%>
+<tr><td align=left class=table1 colspan=3>
+Вторая мировая/Истребители</td></tr>
+<tr><td align=left class=t3 width=30% valign=top>
+<a href=/ru/ww2/f/1870>Беляев ОИ-2</a> [1]<br><a href=/ru/ww2/f/1867>Грушин Гр-1/ИДС</a> [1]<br><a href=/ru/ww2/f/377>Лавочкин ЛаГГ-3</a> [75]<br><a href=/ru/ww2/f/336>Лавочкин Ла-5</a> [81]<br><a href=/ru/ww2/f/335>Лавочкин Ла-7</a> [45]<br><a href=/ru/ww2/f/457>МиГ МиГ-1/МиГ-3</a> [117]<br><a href=/ru/ww2/f/680>Петляков Пе-3</a> [13]<br><a href=/ru/ww2/f/317>Поликарпов И-16</a> [203]<br><a href=/ru/ww2/f/667>Поликарпов И-180/И-185</a> [5]<br><a href=/ru/ww2/f/1475>Поликарпов ИТП</a> [1]<br><a href=/ru/ww2/f/1868>Поликарпов ТИС</a> [1]<br><a href=/ru/ww2/f/1766>Поликарпов Малютка</a> [1]<br><a href=/ru/ww2/f/2051>Сухой Су-1/Су-3 (И-135)</a> [1]<br><a href=/ru/ww2/f/2387>Сухой Су-5</a> [1]<br><a href=/ru/ww2/f/1869>Четвериков ППИ (Че-1)</a> [1]<br><a href=/ru/ww2/f/349>Яковлев Як-1</a> [97]<br><a href=/ru/ww2/f/268>Яковлев Як-3</a> [75]<br><a href=/ru/ww2/f/267>Яковлев Як-7</a> [45]<br><a href=/ru/ww2/f/15>Яковлев Як-9</a> [155]<br><hr size=1 width=100%><span align=left>
+<!-- Google banner start -->
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-6141657215653160";
+google_alternate_color = "E8ECFF";
+google_ad_width = 336;
+google_ad_height = 280;
+google_ad_format = "336x280_as";
+google_ad_type = "text_image";
+google_ad_channel ="0880450074";
+google_color_border = "FF0000";
+google_color_bg = "FFFFFF";
+google_color_link = "FF0000";
+google_color_url = "FFFFFF";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+<!-- eof Google banner -->
+</span>
+<hr size=1 width=100%>
+<a href=/ru/ww2/f/1722>Aichi S1A Denko</a> [1]<br><a href=/ru/ww2/f/2421>Ambrosini SAI.207</a> [1]<br><a href=/ru/ww2/f/465>Ambrosini SAI.403 Dardo</a> [1]<br><a href=/ru/ww2/f/2043>Arado Ar E.381 II</a> [1]<br><a href=/ru/ww2/f/873>l'Arsenal VG-30/32/33/35/36/39</a> [7]<br><a href=/ru/ww2/f/464>Avia B.35/B.135</a> [13]<br><a href=/ru/ww2/f/22>Avia B.534</a> [109]<br><a href=/ru/ww2/f/1390>Aviotehase PN-3</a> [1]<br><a href=/ru/ww2/f/1535>Bachem Ba.349 Natter</a> [4]<br><a href=/ru/ww2/f/1525>Bell FM-1 Airacuda</a> [1]<br><a href=/ru/ww2/f/297>Bell P-39 Airacobra/XFL-1 Airabonita</a> [154]<br><a href=/ru/ww2/f/772>Bell P-59 Airacomet</a> [13]<br><a href=/ru/ww2/f/681>Bell P-63 Kingcobra</a> [42]<br><a href=/ru/ww2/f/1464>Bell XP-77</a> [1]<br><a href=/ru/ww2/f/577>Blackburn B-25 Roc</a> [5]<br><a href=/ru/ww2/f/453>Bloch MB.151/152</a> [44]<br><a href=/ru/ww2/f/452>Bloch MB.155/157</a> [8]<br><a href=/ru/ww2/f/1309>Blohm und Voss BV.155</a> [4]<br><a href=/ru/ww2/f/2044>Blohm und Voss BV P.170</a> [1]<br><a href=/ru/ww2/f/2053>Blohm und Voss BV P.175 Bordjager</a> [1]<br><a href=/ru/ww2/f/2054>Blohm und Voss BV P.179</a> [1]<br><a href=/ru/ww2/f/2077>Blohm und Voss BV P.208</a> [1]<br><a href=/ru/ww2/f/2170>Blohm und Voss BV P.209</a> [1]<br><a href=/ru/ww2/f/2114>Blohm und Voss BV P.210</a> [1]<br><a href=/ru/ww2/f/2390>Blohm und Voss BV P.212</a> [3]<br><a href=/ru/ww2/f/2055>Blohm und Voss BV P.213 Miniaturjager</a> [1]<br><a href=/ru/ww2/f/570>Boulton & Paul P.82 Defiant</a> [60]<br><a href=/ru/ww2/f/122>Brewster B-239/339/F2A Buffalo</a> [93]<br><a href=/ru/ww2/f/1078>Caproni F.4/F.5/F.6/F.7</a> [8]<br><a href=/ru/ww2/f/571>Chance Vought F4U Corsair</a> [272]<br><a href=/ru/ww2/f/989>Commonwealth CA-12/CA-13 Boomerang</a> [17]<br><a href=/ru/ww2/f/1503>Curtiss F15C</a> [3]<br><a href=/ru/ww2/f/78>Curtiss P-36 Hawk/Hawk 75</a> [121]<br><a href=/ru/ww2/f/375>Curtiss P-40 Warhawk/Kittyhawk/Tomahawk</a> [322]<br><a href=/ru/ww2/f/1294>Curtiss XP-42</a> [1]<br><a href=/ru/ww2/f/1725>Curtiss XP-46</a> [1]<br><a href=/ru/ww2/f/1726>Curtiss XP-60</a> [1]<br><a href=/ru/ww2/f/1727>Curtiss XP-62</a> [1]<br><a href=/ru/ww2/f/2334>Curtiss XP-71</a> [1]<br><a href=/ru/ww2/f/770>Curtiss-Wright P-37</a> [2]<br><a href=/ru/ww2/f/200>Curtiss-Wright CW-21/22/23/SNC-1 Falcon/Demon</a> [17]<br><a href=/ru/ww2/f/24>Dewoitine D.520/HD.780</a> [95]<br><a href=/ru/ww2/f/143>DoFlug D-3802/D-3803</a> [4]<br><a href=/ru/ww2/f/470>Dornier Do.335 Pfeil</a> [33]<br><a href=/ru/ww2/f/203>Fairey Firefly (второй)</a> [68]<br><a href=/ru/ww2/f/579>Fairey Fulmar</a> [12]<br><a href=/ru/ww2/f/166>FFVS J.22</a> [6]<br><a href=/ru/ww2/f/123>Fiat CR.42 Falco</a> [73]<br><a href=/ru/ww2/f/352>Fiat G.50 Freccia</a> [63]<br><a href=/ru/ww2/f/458>Fiat G.55/G.56/G.59 Centauro</a> [60]<br><a href=/ru/ww2/f/1729>Fischer P-75 Eagle</a> [2]<br><a href=/ru/ww2/f/95>Fokker D.XXI</a> [66]<br><a href=/ru/ww2/f/1330>Fokker D.XXIII</a> [1]<br><a href=/ru/ww2/f/199>Fokker G.I Faucher</a> [13]<br><a href=/ru/ww2/f/1350>Focke-Wulf Fw.187 Falke</a> [1]<br><a href=/ru/ww2/f/451>Focke-Wulf Fw.190A/S Wurger</a> [223]<br><a href=/ru/ww2/f/230>Focke-Wulf Fw.190F/G</a> [55]<br><a href=/ru/ww2/f/456>Focke-Wulf Fw.190D Dora</a> [96]<br><a href=/ru/ww2/f/2243>Focke-Wulf Project VII Flitzer</a> [1]<br><a href=/ru/ww2/f/2019>Focke-Wulf Super Lorin</a> [3]<br><a href=/ru/ww2/f/462>Focke-Wulf Ta.152</a> [21]<br><a href=/ru/ww2/f/474>Focke-Wulf Ta.154 Moskito</a> [9]<br><a href=/ru/ww2/f/473>Focke-Wulf Ta.183 Huckebein</a> [1]<br><a href=/ru/ww2/f/2007>Focke-Wulf Triebflugeljager</a> [1]<br><a href=/ru/ww2/f/1625>Gotha Go.229/Ho.IX</a> [3]<br><a href=/ru/ww2/f/2092>Gotha Go P.60A</a> [1]<br><a href=/ru/ww2/f/574>Grumman F4F Wildcat</a> [100]<br><a href=/ru/ww2/f/576>Grumman F6F Hellcat</a> [163]<br><a href=/ru/ww2/f/1728>Grumman XF5F/XP-50 Skyrocket</a> [2]<br><a href=/ru/ww2/f/79>Hawker Hurricane/Sea Hurricane</a> [324]<br><a href=/ru/ww2/f/572>Hawker Tempest</a> [59]<br><a href=/ru/ww2/f/463>Hawker Typhoon/Tornado</a> [57]<br><a href=/ru/ww2/f/228>Heinkel He.112</a> [34]<br><a href=/ru/ww2/f/454>Heinkel He.162 Salamander</a> [34]<br><a href=/ru/ww2/f/337>Heinkel He.219 Uhu</a> [16]<br><a href=/ru/ww2/f/472>Heinkel He.280</a> [2]<br><a href=/ru/ww2/f/1288>Heinkel P.1077 Julia</a> [1]<br><a href=/ru/ww2/f/2358>Heinkel P.1078A</a> [1]<br><a href=/ru/ww2/f/2252>Heinkel P.1078B</a> [1]<br><a href=/ru/ww2/f/312>IAR IAR-80/IAR-81</a> [38]<br><a href=/ru/ww2/f/921>IMAM Ro.57</a> [3]<br><a href=/ru/ww2/f/1046>Kawanishi N1K Kyofu/Shiden</a> [36]<br><a href=/ru/ww2/f/1159>Kawasaki Ki-45 Toryu/Nick</a> [41]<br><a href=/ru/ww2/f/1040>Kawasaki Ki-61 Hien/Tony</a> [97]<br><a href=/ru/ww2/f/1483>Kawasaki Ki-64</a> [1]<br><a href=/ru/ww2/f/2333>Kawasaki Ki-88</a> [1]<br><a href=/ru/ww2/f/1589>Kawasaki Ki-96</a> [1]<br><a href=/ru/ww2/f/1045>Kawasaki Ki-100</a> [28]<br><a href=/ru/ww2/f/1042>Kawasaki Ki-102/Ki-108 Randy</a> [10]<br><a href=/ru/ww2/f/2126>Kayaba Katsuodori</a> [3]<br><a href=/ru/ww2/f/1478>Kyushu J7W Shinden</a> [2]<br><a href=/ru/ww2/f/1517>Latecoere Late 299</a> [2]<br><a href=/ru/ww2/f/298>Lockheed P-38 Lightning</a> [192]<br><a href=/ru/ww2/f/1468>Lockheed XP-58 Chain Lightning</a> [1]<br><a href=/ru/ww2/f/769>Macchi MC.200 Saetta</a> [41]<br><a href=/ru/ww2/f/920>Macchi MC.202 Folgore</a> [83]<br><a href=/ru/ww2/f/908>Macchi MC.205 Veltro</a> [42]<br><a href=/ru/ww2/f/1706>Martin-Baker MB.3/MB.5</a> [1]<br><a href=/ru/ww2/f/139>Messerschmitt Bf.109B/C/D Bertha/Caesar/Dora</a> [91]<br><a href=/ru/ww2/f/32>Messerschmitt Bf.109E Emil</a> [266]<br><a href=/ru/ww2/f/231>Messerschmitt Bf.109F Fritz/Friedrich</a> [131]<br><a href=/ru/ww2/f/33>Messerschmitt Bf.109G Gustav</a> [382]<br><a href=/ru/ww2/f/459>Messerschmitt Bf.109K Kurfurst</a> [28]<br><a href=/ru/ww2/f/466>Messerschmitt Bf.109T Toni</a> [21]<br><a href=/ru/ww2/f/318>Messerschmitt Bf.110</a> [127]<br><a href=/ru/ww2/f/460>Messerschmitt Me.163/Me.263 Komet/J8M Shusui</a> [47]<br><a href=/ru/ww2/f/1315>Messerschmitt Me.209</a> [3]<br><a href=/ru/ww2/f/232>Messerschmitt Me.210/Me.410 Hornisse</a> [79]<br><a href=/ru/ww2/f/455>Messerschmitt Me.262 Schwalbe/Sturmvogel/Avia S.92</a> [113]<br><a href=/ru/ww2/f/1474>Messerschmitt Me.309</a> [3]<br><a href=/ru/ww2/f/2011>Messerschmitt Me.329</a> [3]<br><a href=/ru/ww2/f/469>Messerschmitt P.1101</a> [1]<br><a href=/ru/ww2/f/471>Messerschmitt P.1106</a> [1]<br><a href=/ru/ww2/f/2392>Messerschmitt P.1112</a> [1]<br><a href=/ru/ww2/f/2060>Miles M.20 Fighter</a> [1]<br><a href=/ru/ww2/f/1039>Mitsubishi A6M Reisen/Zeke/Zero/Rufe</a> [184]<br><a href=/ru/ww2/f/1041>Mitsubishi A7M Reppu</a> [1]<br><a href=/ru/ww2/f/1043>Mitsubishi J2M Raiden</a> [38]<br><a href=/ru/ww2/f/1479>Mitsubishi J4M Senden</a> [1]<br><a href=/ru/ww2/f/2345>Mitsubishi Ki-73</a> [1]<br><a href=/ru/ww2/f/1484>Mitsubishi Ki-83</a> [1]<br><a href=/ru/ww2/f/351>Morane-Saulnier MS.405/406/410</a> [141]<br><a href=/ru/ww2/f/1196>Nakajima J1N Gekko/Irving</a> [29]<br><a href=/ru/ww2/f/1333>Nakajima J5N Tenrai</a> [2]<br><a href=/ru/ww2/f/768>Nakajima Ki-43 Hayabusa/Oscar</a> [103]<br><a href=/ru/ww2/f/774>Nakajima Ki-44 Shoki/Tojo</a> [34]<br><a href=/ru/ww2/f/771>Nakajima Ki-84 Hayate/Frank</a> [81]<br><a href=/ru/ww2/f/1902>Nakajima Ki-87</a> [1]<br><a href=/ru/ww2/f/2374>Nakajima Ki-201 Karyu</a> [2]<br><a href=/ru/ww2/f/165>North American P-51 Mustang/F-51 Cavalier</a> [579]<br><a href=/ru/ww2/f/1459>North American P-64/NA-50</a> [6]<br><a href=/ru/ww2/f/775>Northrop P-61 Black Widow</a> [28]<br><a href=/ru/ww2/f/1465>Northrop XP-56 Black Bullet</a> [2]<br><a href=/ru/ww2/f/2100>Northrop XP-79 Flying Ram</a> [1]<br><a href=/ru/ww2/f/346>Potez 63/630/631/633/637</a> [76]<br><a href=/ru/ww2/f/1481>Potez 670/671</a> [1]<br><a href=/ru/ww2/f/1285>PZL P.38 Wilk/P.48 Lampart/P.54 Rys</a> [3]<br><a href=/ru/ww2/f/1253>PZL P.39/P.45 Sokol</a> [3]<br><a href=/ru/ww2/f/269>PZL P.50 Jastrzab</a> [2]<br><a href=/ru/ww2/f/1284>PZL P.62</a> [2]<br><a href=/ru/ww2/f/227>Reggiane Re.2000 Falco/Heja I/II</a> [32]<br><a href=/ru/ww2/f/922>Reggiane Re.2001 Ariete I</a> [22]<br><a href=/ru/ww2/f/468>Reggiane Re.2002 Ariete II</a> [13]<br><a href=/ru/ww2/f/467>Reggiane Re.2005 Sagittario</a> [13]<br><a href=/ru/ww2/f/2154>Renard R.36/R.37/R.38/R.40</a> [1]<br><a href=/ru/ww2/f/778>Republic P-43/P-44 Lancer/Rocket</a> [10]<br><a href=/ru/ww2/f/350>Republic P-47 Thunderbolt</a> [333]<br><a href=/ru/ww2/f/773>Republic P-72</a> [1]<br><a href=/ru/ww2/f/345>Rogozarski IK-3</a> [10]<br><a href=/ru/ww2/f/2049>RWD RWD-25</a> [1]<br><a href=/ru/ww2/f/1502>Ryan FR-1 Fireball</a> [9]<br><a href=/ru/ww2/f/167>SAAB J.21/A.21</a> [13]<br><a href=/ru/ww2/f/124>Sabca S.47/Ca.335 Maestrale</a> [1]<br><a href=/ru/ww2/f/1352>Savoia Marchetti SM.91/SM.92</a> [2]<br><a href=/ru/ww2/f/1431>SNCAO CAO.200</a> [1]<br><a href=/ru/ww2/f/2032>Sombold So.344</a> [1]<br><a href=/ru/ww2/f/1635>Sud-Est SE.100/101/102/105</a> [1]<br><a href=/ru/ww2/f/52>Supermarine Spitfire</a> [649]<br><a href=/ru/ww2/f/72>Supermarine Seafire</a> [51]<br><a href=/ru/ww2/f/1621>Supermarine Spitful/Seafang</a> [2]<br><a href=/ru/ww2/f/461>VEF I-16</a> [3]<br><a href=/ru/ww2/f/1190>VEF I-19</a> [1]<br><a href=/ru/ww2/f/379>VL Myrsky/Myrsky II</a> [7]<br><a href=/ru/ww2/f/376>VL Pyorremyrsky/Puuska</a> [5]<br><a href=/ru/ww2/f/568>Vultee P-48/P-66 Vanguard</a> [4]<br><a href=/ru/ww2/f/1466>Vultee XP-54</a> [2]<br><a href=/ru/ww2/f/1426>Weiss Manfred WM-23 Ezust Nyil</a> [1]<br><a href=/ru/ww2/f/1556>Weiss Manfred XNI-2 Kameleon</a> [1]<br><a href=/ru/ww2/f/573>Westland Welkin</a> [8]<br><a href=/ru/ww2/f/580>Westland Whirlwind</a> [19]<br><a href=/ru/ww2/f/2083>Zeppelin Rammer</a> [1]<br><br><a href=#top><span class=top_button>^ вверх</span></a><hr>
+<span align=left>
+<!-- Google banner start -->
+<script type="text/javascript"><!--
+google_ad_client = "pub-6141657215653160";
+google_alternate_color = "E8ECFF";
+google_ad_width = 180;
+google_ad_height = 90;
+google_ad_format = "180x90_0ads_al_s";
+google_ad_channel ="0880450074";
+google_color_link = "0000FF";
+google_color_url = "000000";
+google_color_text = "000000";
+google_color_bg = "E8ECFF";
+google_color_border = "E8ECFF";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<!-- eof Google banner -->
+</span>
+</td><td align=left class=t3 width=20% valign=top>
+<br><br><br><br>
+<center>
+<!--CENTRAL SCRAPPER BANNER -->
+<script type="text/javascript"><!--
+google_ad_client = "pub-6141657215653160";
+google_alternate_color = "E8ECFF";
+google_ad_width = 160;
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_type = "text_image";
+google_ad_channel ="1294254017";
+google_color_border = "000000";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "FFFFFF";
+google_color_text = "FFFFFF";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<!-- eof CENTRAL BANNER -->
+<br><br>
+</center>
+</td>
+<td align=left class=t3 width=50% valign=top>
+&nbsp;
+</td>
+</tr>
+<tr><td align=center class=table1 colspan=3>&copy;2003-2015 <A HREF=mailto:wpalette@gmail.com?Subject=E-mail_to_WP-Webmaster> ПАЛИТРА КРЫЛА</A></td></tr>
+</td></tr></table>
+</td></tr></table>
+
+
+
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'wpaletteru'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<center>
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 width=100% class=table1>
+<tr>
+<td width=1% valign=top align=left CELLSPACING=0 CELLPADDING=0>
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 width=1% valign=top align=left>
+<tr>
+<td>
+<!-- SpyLOG f:0211 -->
+<script language="javascript"><!--
+Mu="u4611.19.spylog.com";Md=document;Mnv=navigator;Mp=0;
+Md.cookie="b=b";Mc=0;if(Md.cookie)Mc=1;Mrn=Math.random();
+Mn=(Mnv.appName.substring(0,2)=="Mi")?0:1;Mt=(new Date()).getTimezoneOffset();
+Mz="p="+Mp+"&rn="+Mrn+"&c="+Mc+"&t="+Mt;
+if(self!=top){Mfr=1;}else{Mfr=0;}Msl="1.0";
+//--></script><script language="javascript1.1"><!--
+Mpl="";Msl="1.1";Mj = (Mnv.javaEnabled()?"Y":"N");Mz+='&j='+Mj;
+//--></script><script language="javascript1.2"><!-- 
+Msl="1.2";Ms=screen;Mpx=(Mn==0)?Ms.colorDepth:Ms.pixelDepth;
+Mz+="&wh="+Ms.width+'x'+Ms.height+"&px="+Mpx;
+//--></script><script language="javascript1.3"><!--
+Msl="1.3";//--></script><script language="javascript"><!--
+My="";My+="<a href='http://"+Mu+"/cnt?cid=461119&f=3&p="+Mp+"&rn="+Mrn+"' target='_blank'>";
+My+="<img style=filter:Alpha(Opacity=50) src='http://"+Mu+"/cnt?cid=461119&"+Mz+"&sl="+Msl+"&r="+escape(Md.referrer)+"&fr="+Mfr+"&pg="+escape(window.location.href);
+My+="' border=0 width=88 height=31 alt='SpyLOG'>";
+My+="</a>";Md.write(My);//--></script><noscript>
+<a href="http://u4611.19.spylog.com/cnt?cid=461119&f=3&p=0" target="_blank">
+<img src="http://u4611.19.spylog.com/cnt?cid=461119&p=0" alt='SpyLOG' border='0' width=88 height=31 >
+</a></noscript>
+<!-- SpyLOG -->
+</td>
+<td><a href="http://www.avcanada.ca/topsites/"><img style=filter:Alpha(Opacity=50) src="http://www.avcanada.ca/topsites/button.php?u=12" alt="AvCanada Topsites List" width="88" height="31" border="0"></a></td>
+</tr><tr>
+<td height=31 width=88><!--begin of Top100 logo--><a href="http://top100.rambler.ru/top100/"><img src="http://top100-images.rambler.ru/top100/w3.gif" alt="Rambler's Top100" width=88 height=31 border=0></a><!--end of Top100 logo --></td>
+<td align=center>
+<!-- Krasland.ru counter code begin -->
+<script language=JavaScript>
+<!--
+d=document;server='http://cnt.krasland.ru';
+rn=Math.round(Math.random()*1e6);
+d.write('<a href=\''+server+'/from?id=2100\' target=_blank>');
+d.write('<img alt=\'Красноярский рейтинг сайтов на Krasland.ru\' src=\''+server+'/?c=2100&ref='+escape(d.referrer)+'&rand='+rn+'\' width=88 height=31 border=0></a>');
+// -->
+</script>
+<noscript>
+<a href="http://cnt.krasland.ru/from?id=2100" target="_blank">
+<img src="http://cnt.krasland.ru/?c=2100" width="88" height="31" border="0" alt="Красноярский рейтинг сайтов на Krasland.ru"></a>
+</noscript>
+<!-- Krasland.ru counter code end -->
+</td>
+</tr>
+</table>
+<br><br><br>
+
+</td>
+<td width="1%" align="right" valign="top">
+<!-- banner_down -->
+<!-- AVITOP.COM BANNER EXCHANGE v1.4 -->
+<CENTER><script language="JavaScript"><!--
+var code = ''; window.defaultOnError = window.onerror; window.onerror=doexe;
+var now = new Date(); var nIndex = now.getTime();
+var rf = document.referrer; if(top.document.referrer!=null) rf = top.document.referrer; window.onerror=window.defaultOnError; doexe();
+function doexe(){
+document.write('<s' + 'cript src="http://ban.avitop.com/ban/inject.asp?j=y&id=135&c=' + nIndex + '&ref=' + escape(rf) + '">');
+document.write('</' + 's' + 'cript>');
+return true;}
+// --></script><script language="JavaScript"><!--
+document.write(code); document.write('<A HREF="http://www.avitop.com/banner/" TARGET="_blank"><font size=-1 face=Arial><b>Avitop.com Aviation banner exchange - Join now!</b></font></A></P>');
+// --></script>
+<noscript><a href="http://ban.avitop.com/ban/click.asp?rid=135" target="_blank">
+<img border="0" src="http://ban.avitop.com/ban/inject.asp?id=135" border="1" width="468" height="60"></a><br>
+<A HREF="http://www.avitop.com/banner/" TARGET="_blank"><font size=-1 face=Arial><b>Avitop.com Aviation banner exchange - Join now!</b></font></A></CENTER></noscript>
+<!---------- END AVITOP BANNER EXCHANGE ---------->
+<!-- eof_banner_down -->
+</td></tr></table>
+</center><span class=update>This page generated in 0.072415828704834 seconds</span></center></body></html>
