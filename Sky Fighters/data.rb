@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require "net/http"
 require "uri"
 
@@ -107,4 +108,9 @@ for war in wars
   x += 1
   p x, Time.now
 end
+<<<<<<< HEAD
 p all_planes, all_nations, planes
+=======
+p all_planes, country
+=end
+>>>>>>> 6f180aa4bfa777a821f08c807d8a31b6b8df197e
