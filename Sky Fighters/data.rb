@@ -40,7 +40,7 @@ end
 
 
 wars = %w(ww1/ ww15/ ww2/ ww3/ ww4/)
-#wars = %w(ww1/ ww15/)
+#wars = %w(ww4/)
 planes_types = %w(f b a t o h s v)
 x = 0
 for war in wars
@@ -57,7 +57,7 @@ for war in wars
        epoch = "Cold war"
       when "ww4/"
         epoch = "Modern"
-        planes_types << "d"
+        planes_types = %w(f b a t o h s v d)
       else
         epoch = "Unknown"
     end

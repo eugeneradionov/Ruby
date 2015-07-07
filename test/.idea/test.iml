@@ -109,5 +109,6 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="json (v1.8.3, ruby-2.1.2-p95) [gem]" level="application" />
   </component>
 </module>
