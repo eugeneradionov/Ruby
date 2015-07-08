@@ -1,3 +1,5 @@
+start = Time.now
+
 require "net/http"
 require "uri"
 
@@ -44,25 +46,25 @@ wars = %w(ww1/ ww15/ ww2/ ww3/ ww4/)
 planes_types = %w(f b a t o h s v)
 x = 0
 for war in wars
+
+  case war
+    when "ww1/"
+      epoch = "World War I"
+    when "ww15/"
+      epoch = "Interwar"
+    when "ww2/"
+      epoch = "World War II"
+    when "ww3/"
+      epoch = "Cold war"
+    when "ww4/"
+      epoch = "Modern"
+      planes_types = %w(f b a t o h s v d)
+    else
+      epoch = "Unknown"
+  end
   for type in planes_types
 
-    case  war
-      when "ww1/"
-        epoch = "World War I"
-      when "ww15/"
-        epoch = "Interwar"
-      when "ww2/"
-        epoch = "World War II"
-      when "ww3/"
-       epoch = "Cold war"
-      when "ww4/"
-        epoch = "Modern"
-        planes_types = %w(f b a t o h s v d)
-      else
-        epoch = "Unknown"
-    end
-
-    case  type
+    case type
       when "f"
         type_of_plane = "Fighter"
       when "b"
@@ -92,7 +94,6 @@ for war in wars
     all_nations = []
 
     #Array type of [<nation>, <count of planes>]
-    m = 1
     planes = []
     for i in all_planes
       uri_nations = URI.parse("http://wp.scn.ru" + i[0])
@@ -101,10 +102,9 @@ for war in wars
       nation = best_nation(response_nations.force_encoding("windows-1251").encode("UTF-8").scan(scanregex))
       all_nations << nation
       planes << Planes.new(i[1], type_of_plane, nation, epoch, 'http://wp.scn.ru/ru/ww2/f'+i[0])
-      m += 1
     end
   end
-  x += 1
-  p x, Time.now
 end
-p all_planes, all_nations, planes
+stop = Time.now
+time = (stop - start)/60
+p planes, "Runtime: %.2f minutes" % time
