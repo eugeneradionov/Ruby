@@ -12,7 +12,7 @@ class Planes
     @epoch = epoch
     @url = url
   end
-  attr_reader :name, :type, :nation, :epoch, :url
+  attr_reader :name, :type, :nation, :epoch
 end
 
 def best_nation(array_of_nations)
@@ -24,9 +24,9 @@ def best_nation(array_of_nations)
       country = i[0]
     end
   end
-  max_count = -1
+
   if country == nil
-    return "Другие"
+    return 'Другие'
   else
     return country
   end
@@ -64,46 +64,24 @@ for war in wars
                      "s" => "Special",
                      "v" => "Helicopter",
                      "d" => "Drone"}
-=begin
-    case type
-      when "f"
-        type_of_plane = "Fighter"
-      when "b"
-        type_of_plane = "Bomber"
-      when "a"
-        type_of_plane = "Attack"
-      when "t"
-        type_of_plane = "Transport"
-      when "o"
-        type_of_plane = "Other"
-      when "h"
-        type_of_plane= "Sea"
-      when "s"
-        type_of_plane = "Special"
-      when "v"
-        type_of_plane = "Helicopter"
-      when "d"
-        type_of_plane = "Drone"
-      else
-        type_of_plane = "Unknown"
-    end
-=end
     # Getting source code for planes
-    uri_planes = URI.parse("http://wp.scn.ru/ru/"+ war + type)
+    uri_planes = URI.parse('http://wp.scn.ru/ru/'+ war + type)
     response_planes = Net::HTTP.get(uri_planes)
-    all_planes = response_planes.force_encoding("windows-1251").encode("UTF-8").scan(/<a\shref=(?<url>[^>]*)>(?<name>[^<]*)<\/a>\s?\[\d+\]<br>/)
-    all_nations = []
+    planes_regex = /<a\shref=(?<url>[^>]*)>(?<name>[^<]*)<\/a>\s?\[\d+\]<br>/
+    all_planes = response_planes.force_encoding('windows-1251').encode('UTF-8').scan(planes_regex)
 
     #Array type of [<name>, <type>, <nation>, <epoch>, <URL>]
     for i in all_planes
-      uri_nations = URI.parse("http://wp.scn.ru" + i[0])
+      uri_nations = URI.parse('http://wp.scn.ru' + i[0])
       response_nations = Net::HTTP.get(uri_nations)
-      nation = best_nation(response_nations.force_encoding("windows-1251").encode("UTF-8").scan(/<img\sclass=img_bg[^.]*\.gif>\s<a\shref=[^>]*>(?<country>[^<]*)<\/a>\s?\[(?<count>\d+)\]/))
-      all_nations << nation
+      nations_regex =/<img\sclass=img_bg[^.]*\.gif>\s<a\shref=[^>]*>(?<country>[^<]*)<\/a>\s?\[(?<count>\d+)\]/
+      nation = best_nation(response_nations.force_encoding('windows-1251').encode('UTF-8').scan(nations_regex))
       planes << Planes.new(i[1], type_of_plane[type], nation, epoch, 'http://wp.scn.ru/'+i[0])
     end
   end
 end
+
+#Output into csv and json files
 f = File.open('output.csv', 'w')
 f.write("Name,Type,Nation,Epoch;\n")
 j = File.open('jsonout.json', 'w')
@@ -116,4 +94,4 @@ j.close
 
 stop = Time.now
 time = (stop - start)/60
-p "Runtime: %.2f minutes" % time
+p 'Runtime: %.2f minutes' % time
