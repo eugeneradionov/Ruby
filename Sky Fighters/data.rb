@@ -1,10 +1,10 @@
 start = Time.now
 
-require "net/http"
-require "uri"
+require 'net/http'
+require 'uri'
+require 'json'
 
 class Planes
-  #attr_accessor name, type, nation, epoch, url
   def initialize(name, type, nation, epoch, url)
     @name = name
     @type = type
@@ -12,14 +12,7 @@ class Planes
     @epoch = epoch
     @url = url
   end
-
-  def self.all
-    ObjectSpace.each_object(self).to_a
-  end
-
-  def self.count
-    all.count
-  end
+  attr_reader :name, :type, :nation, :epoch, :url
 end
 
 def best_nation(array_of_nations)
@@ -42,9 +35,8 @@ end
 
 
 wars = %w(ww1/ ww15/ ww2/ ww3/ ww4/)
-#wars = %w(ww4/)
 planes_types = %w(f b a t o h s v)
-x = 0
+planes = []
 for war in wars
 
   case war
@@ -63,7 +55,16 @@ for war in wars
       epoch = "Unknown"
   end
   for type in planes_types
-
+    type_of_plane = {"f" => "Fighter",
+                     "b" => "Bomber",
+                     "a" => "Attack",
+                     "t" => "Transport",
+                     "o" => "Other",
+                     "h" => "Sea",
+                     "s" => "Special",
+                     "v" => "Helicopter",
+                     "d" => "Drone"}
+=begin
     case type
       when "f"
         type_of_plane = "Fighter"
@@ -86,25 +87,33 @@ for war in wars
       else
         type_of_plane = "Unknown"
     end
+=end
     # Getting source code for planes
     uri_planes = URI.parse("http://wp.scn.ru/ru/"+ war + type)
     response_planes = Net::HTTP.get(uri_planes)
-    #Net::HTTP.get_print(uri)
     all_planes = response_planes.force_encoding("windows-1251").encode("UTF-8").scan(/<a\shref=(?<url>[^>]*)>(?<name>[^<]*)<\/a>\s?\[\d+\]<br>/)
     all_nations = []
 
-    #Array type of [<nation>, <count of planes>]
-    planes = []
+    #Array type of [<name>, <type>, <nation>, <epoch>, <URL>]
     for i in all_planes
       uri_nations = URI.parse("http://wp.scn.ru" + i[0])
       response_nations = Net::HTTP.get(uri_nations)
-      scanregex = /<img\sclass=img_bg[^.]*\.gif>\s<a\shref=[^>]*>(?<country>[^<]*)<\/a>\s?\[(?<count>\d+)\]/
-      nation = best_nation(response_nations.force_encoding("windows-1251").encode("UTF-8").scan(scanregex))
+      nation = best_nation(response_nations.force_encoding("windows-1251").encode("UTF-8").scan(/<img\sclass=img_bg[^.]*\.gif>\s<a\shref=[^>]*>(?<country>[^<]*)<\/a>\s?\[(?<count>\d+)\]/))
       all_nations << nation
-      planes << Planes.new(i[1], type_of_plane, nation, epoch, 'http://wp.scn.ru/ru/ww2/f'+i[0])
+      planes << Planes.new(i[1], type_of_plane[type], nation, epoch, 'http://wp.scn.ru/'+i[0])
     end
   end
 end
+f = File.open('output.csv', 'w')
+f.write("Name,Type,Nation,Epoch;\n")
+j = File.open('jsonout.json', 'w')
+planes.each{|x|
+  f.write(x.name + "," + x.type + "," + x.nation + "," + x.epoch + ";\n")
+  j.write({ 'name'=> x.name, 'type' => x.type, 'nation' => x.nation, 'epoch' => x.epoch}.to_json)
+}
+f.close
+j.close
+
 stop = Time.now
 time = (stop - start)/60
-p planes, "Runtime: %.2f minutes" % time
+p "Runtime: %.2f minutes" % time
