@@ -1,4 +1,4 @@
-def timer (start)
+def timer (start) 
   #Simple timer
   puts "Minutes: " + start.to_s
   start_time = Time.now
