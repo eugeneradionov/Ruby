@@ -17,7 +17,7 @@ end
 def best_nation(array_of_nations)
 #Determines the best nation
   max_count = -1
-  for i in array_of_nations
+  array_of_nations.each do |i|
     if max_count < i[1].to_i
       max_count = i[1].to_i
       country = i[0]
@@ -40,7 +40,7 @@ def csv_out(file_name, array)
     elsif x.name.include? ('"')
       x.name.gsub!('"', '')
     end
-    f.write(x.name + "," + x.type + "," + x.nation + "," + x.epoch + ";\n")
+    f.write("#{x.name},#{x.type},#{x.nation},#{x.epoch};\n")
   }
   f.close
 end
@@ -59,7 +59,7 @@ base_url = 'http://wp.scn.ru/'
 wars = %w(ww1/ ww15/ ww2/ ww3/ ww4/)
 planes_types = %w(f b a t o h s v)
 planes = []
-for war in wars
+wars.each do |war|
 
   case war
     when "ww1/"
@@ -76,7 +76,7 @@ for war in wars
     else
       epoch = "Unknown"
   end
-  for type in planes_types
+  planes_types.each do |type|
     type_of_plane = {"f" => "Fighter",
                      "b" => "Bomber",
                      "a" => "Attack",
@@ -93,7 +93,7 @@ for war in wars
     all_planes = response_planes.force_encoding('windows-1251').encode('UTF-8').scan(planes_regex)
 
     #Array type of [<name>, <type>, <nation>, <epoch>, <URL>]
-    for i in all_planes
+    all_planes.each do |i|
       uri_nations = URI.parse(base_url + i[0])
       response_nations = Net::HTTP.get(uri_nations)
       nations_regex =/<img\sclass=img_bg[^.]*\.gif>\s<a\shref=[^>]*>(?<country>[^<]*)<\/a>\s?\[(?<count>\d+)\]/
