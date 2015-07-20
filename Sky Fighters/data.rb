@@ -1,8 +1,7 @@
-start = Time.now
-
 require 'net/http'
 require 'uri'
 require 'json'
+
 
 class Planes
   def initialize(name, type, nation, epoch, url)
@@ -32,8 +31,32 @@ def best_nation(array_of_nations)
   end
 end
 
+def csv_out(file_name, array)
+  f = File.open(file_name, 'w')
+  f.write("Name,Type,Nation,Epoch;\n")
+  array.each{|x|
+    while x.name.include?('/')
+      x.name['/'] = ' '
+    end
+    while x.name.include? (%Q("))
+      x.name[%Q(")] = ''
+    end
+    f.write(x.name + "," + x.type + "," + x.nation + "," + x.epoch + ";\n")
+  }
+  f.close
+end
 
+def json_out(file_name, array)
+  j = File.open(file_name, 'w')
+  array.each{|x|
+    j.write({ 'name'=> x.name, 'type' => x.type, 'nation' => x.nation, 'epoch' => x.epoch}.to_json)
+  }
+  j.close
+end
 
+start = Time.now
+
+base_url = 'http://wp.scn.ru/'
 wars = %w(ww1/ ww15/ ww2/ ww3/ ww4/)
 planes_types = %w(f b a t o h s v)
 planes = []
@@ -65,23 +88,25 @@ for war in wars
                      "v" => "Helicopter",
                      "d" => "Drone"}
     # Getting source code for planes
-    uri_planes = URI.parse('http://wp.scn.ru/ru/'+ war + type)
+    uri_planes = URI.parse("#{base_url}ru/#{war}#{type}")
     response_planes = Net::HTTP.get(uri_planes)
     planes_regex = /<a\shref=(?<url>[^>]*)>(?<name>[^<]*)<\/a>\s?\[\d+\]<br>/
     all_planes = response_planes.force_encoding('windows-1251').encode('UTF-8').scan(planes_regex)
 
     #Array type of [<name>, <type>, <nation>, <epoch>, <URL>]
     for i in all_planes
-      uri_nations = URI.parse('http://wp.scn.ru' + i[0])
+      uri_nations = URI.parse(base_url + i[0])
       response_nations = Net::HTTP.get(uri_nations)
       nations_regex =/<img\sclass=img_bg[^.]*\.gif>\s<a\shref=[^>]*>(?<country>[^<]*)<\/a>\s?\[(?<count>\d+)\]/
       nation = best_nation(response_nations.force_encoding('windows-1251').encode('UTF-8').scan(nations_regex))
-      planes << Planes.new(i[1], type_of_plane[type], nation, epoch, 'http://wp.scn.ru/'+i[0])
+      planes << Planes.new(i[1], type_of_plane[type], nation, epoch, base_url+i[0])
     end
   end
 end
 
 #Output into csv and json files
+
+=begin
 f = File.open('output.csv', 'w')
 f.write("Name,Type,Nation,Epoch;\n")
 j = File.open('jsonout.json', 'w')
@@ -91,7 +116,11 @@ planes.each{|x|
 }
 f.close
 j.close
+=end
+
+csv_out('output.csv', planes)
+json_out('jsonout.json', planes)
 
 stop = Time.now
-time = (stop - start)/60
-p 'Runtime: %.2f minutes' % time
+time = stop - start
+p "Runtime: #{time.to_i} seconds"
