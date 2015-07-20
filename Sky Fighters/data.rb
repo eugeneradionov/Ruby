@@ -35,11 +35,10 @@ def csv_out(file_name, array)
   f = File.open(file_name, 'w')
   f.write("Name,Type,Nation,Epoch;\n")
   array.each{|x|
-    while x.name.include?('/')
-      x.name['/'] = ' '
-    end
-    while x.name.include? (%Q("))
-      x.name[%Q(")] = ''
+    if x.name.include?('/')
+      x.name.gsub!('/', ' ')
+    elsif x.name.include? ('"')
+      x.name.gsub!('"', '')
     end
     f.write(x.name + "," + x.type + "," + x.nation + "," + x.epoch + ";\n")
   }
@@ -105,19 +104,6 @@ for war in wars
 end
 
 #Output into csv and json files
-
-=begin
-f = File.open('output.csv', 'w')
-f.write("Name,Type,Nation,Epoch;\n")
-j = File.open('jsonout.json', 'w')
-planes.each{|x|
-  f.write(x.name + "," + x.type + "," + x.nation + "," + x.epoch + ";\n")
-  j.write({ 'name'=> x.name, 'type' => x.type, 'nation' => x.nation, 'epoch' => x.epoch}.to_json)
-}
-f.close
-j.close
-=end
-
 csv_out('output.csv', planes)
 json_out('jsonout.json', planes)
 
