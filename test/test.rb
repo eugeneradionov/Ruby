@@ -12,15 +12,19 @@ def alphabet
   #Print alphabet
   "a".upto("z") {|i| print i}
 end
+
+#Test department
+
+
 require "net/http"
 require "uri"
-#Test department
-#uri_planes = URI.parse("http://wp.scn.ru/ru/ww2/f")
-#response_planes = Net::HTTP.get(uri_planes)
-#all_planes = response_planes.scan(/<a\shref=(?<url>[^>]*)>(?<name>[^<]*)<\/a>\s?\[\d+\]<br>/).each{|i| i[1].encode("ASCII-8BIT").force_encoding("utf-8")}
+uri_planes = URI.parse("http://wp.scn.ru/ru/ww2/f")
+response_planes = Net::HTTP.get(uri_planes)
 
+#windows-1251
+regex =/charset=\s+"/
 
-
+=begin
 require "net/http"
 require "uri"
 
@@ -29,4 +33,12 @@ result = Net::HTTP.get(uri)
 
 scan = result.force_encoding("windows-1251").encode("UTF-8").scan(/<a\shref=(?<url>[^>]*)>(?<name>[^<]*)<\/a>\s?\[\d+\]<br>/)
 
-p scan
+s = 'asddas/dasd/asd/as/da/"sd/"'
+while s.include?('/')
+  s['/'] = ' '
+end
+while s.include? (%Q("))
+  s[%Q(")] = ''
+end
+p s
+=end
