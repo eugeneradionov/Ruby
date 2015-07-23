@@ -104,7 +104,6 @@ wars.each do |war|
       response_nations = Net::HTTP.get(uri_nations)
       nations_regex = /<img\sclass=img_bg[^.]*\.gif>\s<a\shref=[^>]*>(?<country>[^<]*)<\/a>\s?\[(?<count>\d+)\]/
       nation = best_nation(response_nations.force_encoding('windows-1251').encode('UTF-8').scan(nations_regex))
-      p nation
       planes << Planes.new(i[1], type_of_plane[type], nation, epoch, base_url+i[0])
       count_of_pages += 1
     end
