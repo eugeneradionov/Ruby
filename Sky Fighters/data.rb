@@ -39,7 +39,7 @@ def csv_out(file_name, array)
     elsif x.name.include? ('"')
       x.name.gsub!('"', '""')
     end
-    f.write("#{x.name},#{x.type},#{x.nation},#{x.epoch};\n")
+    f.write("#{x.name},#{x.type},#{x.nation},#{x.epoch}\n")
   end
   f.close
   stop = Time.now
