@@ -142,42 +142,6 @@ def best_nation(url, regex)
   end
 end
 
-def csv_out(file_name, array)
-  start = Time.now
-  begin
-    f = File.open(file_name, 'w')
-    f.write("Name,Type,Nation,Epoch\n")
-  rescue IOError
-    return p 'I/O error!'
-  rescue
-    return p 'Oops :('
-  end
-  array.each do |x|
-    x.name.gsub!('"', '""')
-    f.write("\"#{x.name}\",\"#{x.type}\",\"#{x.nation}\",\"#{x.epoch}\"\n")
-  end
-  f.close
-  time = (Time.now - start).to_i
-  p "Export to CSV: committed #{array.size} records in #{time} seconds"
-end
-
-def json_out(file_name, array)
-  start = Time.now
-  begin
-    j = File.open(file_name, 'w')
-  rescue IOError
-    return p 'I/O error!'
-  rescue
-    return p 'Oops :('
-  end
-  array.each{|x|
-    j.write({ 'name'=> x.name, 'type' => x.type, 'nation' => x.nation, 'epoch' => x.epoch}.to_json)
-  }
-  j.close
-  time = (Time.now - start).to_i
-  p "Export to JSON: committed #{array.size} records in #{time} seconds"
-end
-
 
 
 start_download = Time.now
@@ -185,8 +149,7 @@ planes = []
 count_of_pages = 0
 urls.each do |plane|
   #Array type of [<URL>, <name>]
-  response_planes = encoding_safe_response(plane[0],'UTF-8')
-  all_planes = response_planes.scan(planes_regex)
+  all_planes = encoding_safe_response(plane[0],'UTF-8').scan(planes_regex)
   #Array type of [<name>, <type>, <nation>, <epoch>, <URL>]
   all_planes.each do |i|
     nation = best_nation(plane[0] + i[0].split('/')[-1], nations_regex)
@@ -198,9 +161,8 @@ end
 time_download = (Time.now - start_download).to_i
 p "Fetched #{count_of_pages} pages in #{time_download} seconds."
 #Output into csv and json files
-#csv_out('output.csv', planes)
-#json_out('jsonout.json', planes)
-csv = Output.new(CsvOut.new)
-json = Output.new(JsonOut.new)
-csv.use_strategy('output.csv', planes)
-json.use_strategy('jsonout.json', planes)
+output = Output.new(CsvOut.new)
+output.use_strategy('output.csv', planes)
+
+output = Output.new(JsonOut.new)
+output.use_strategy('jsonout.json', planes)
