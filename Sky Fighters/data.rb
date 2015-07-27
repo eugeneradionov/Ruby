@@ -57,15 +57,28 @@ urls = [
     ['http://wp.scn.ru/ru/ww4/v/', 'Helicopter', 'Modern'],
     ['http://wp.scn.ru/ru/ww4/d/', 'Drone', 'Modern']
 ]
+
 planes_regex = /<a\shref=(?<url>[^>]*)>(?<name>[^<]*)<\/a>\s?\[\d+\]<br>/
 nations_regex = /<img\sclass=img_bg[^.]*\.gif>\s<a\shref=[^>]*>(?<country>[^<]*)<\/a>\s?\[(?<count>\d+)\]/
+
+def encoding_safe_response(url, encoding)
+  begin
+    uri_parse = URI.parse(url)
+    response = Net::HTTP.get(uri_parse)
+    result = response.dup.force_encoding(encoding)
+    unless result.valid_encoding?
+      result = response.encode(encoding, 'Windows-1251' )
+    end
+  rescue EncodingError
+    result.encode!(encoding, invalid: :replace, undef: :replace )
+  end
+end
 
 def best_nation(url, regex)
 #Determines the best nation
   begin
-    uri_nations = URI.parse(url)
-    response_nations = Net::HTTP.get(uri_nations)
-    array_of_nations = response_nations.force_encoding('windows-1251').encode('UTF-8').scan(regex)
+    response_nations = encoding_safe_response(url,'UTF-8')
+    array_of_nations = response_nations.scan(regex)
     return array_of_nations.max_by{|x| x.count.to_i}[0]
   rescue
     return 'Другие'
@@ -114,9 +127,8 @@ count_of_pages = 0
 
 urls.each do |plane|
   #Array type of [<URL>, <name>]
-  uri_planes = URI.parse(plane[0])
-  response_planes = Net::HTTP.get(uri_planes)
-  all_planes = response_planes.force_encoding('windows-1251').encode('UTF-8').scan(planes_regex)
+  response_planes = encoding_safe_response(plane[0],'UTF-8')
+  all_planes = response_planes.scan(planes_regex)
   #Array type of [<name>, <type>, <nation>, <epoch>, <URL>]
   all_planes.each do |i|
     nation = best_nation(plane[0] + i[0].split('/')[-1], nations_regex)
