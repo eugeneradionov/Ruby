@@ -4,6 +4,7 @@ require 'net/http'
 require 'uri'
 require 'json'
 require 'interface'
+require 'pg'
 
 #Pattern strategy
 OutputStrategy = interface {required_methods :use}
@@ -50,15 +51,20 @@ class CsvOut
   implements OutputStrategy
 end
 
-class PgOut
+class PostgresqlOut
   def use(database_name, array)
     start = Time.now
     conn = PG.connect(dbname: database_name)
-    conn.exec("TRUNCATE info;")
+    conn.exec("CRATE TABLE IF NOT EXISTS catalog (
+id SERIAL PRIMARY KEY,
+name TEXT NOT NULL,
+type TEXT,nation TEXT,
+epoch TEXT);")
+    conn.exec("TRUNCATE catalog;")
     array.each do |x|
-      conn.exec( "INSERT INTO info
-  (name, type, nation, epoch)
-SELECT '#{x.name}', '#{x.type}', '#{x.nation}', '#{x.epoch}';")
+      x.name.gsub!('"', '""')
+      conn.exec( "INSERT INTO catalog (name, type, nation, epoch)
+      VALUES #{x.name},#{x.type},#{x.nation},#{x.epoch};")
     end
     time = (Time.now - start).to_i
     p "Export to PostgreSQL: committed #{array.size} records in #{time} seconds"
@@ -184,5 +190,5 @@ output = Output.new(JsonOut.new)
 output.use_strategy('jsonout.json', planes)
 
 #Output to postgresql
-output = Output.new(PgOut.new)
+output = Output.new(PostgresqlOut.new)
 output.use_strategy('planes',planes)
