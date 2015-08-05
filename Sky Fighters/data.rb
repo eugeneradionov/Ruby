@@ -50,6 +50,22 @@ class CsvOut
   implements OutputStrategy
 end
 
+class PgOut
+  def use(database_name, array)
+    start = Time.now
+    conn = PG.connect(dbname: database_name)
+    conn.exec("TRUNCATE info;")
+    array.each do |x|
+      conn.exec( "INSERT INTO info
+  (name, type, nation, epoch)
+SELECT '#{x.name}', '#{x.type}', '#{x.nation}', '#{x.epoch}';")
+    end
+    time = (Time.now - start).to_i
+    p "Export to PostgreSQL: committed #{array.size} records in #{time} seconds"
+  end
+  implements OutputStrategy
+end
+
 class Output
   attr_accessor :output_strategy
   def initialize (output_strategy)
@@ -166,3 +182,7 @@ output.use_strategy('output.csv', planes)
 
 output = Output.new(JsonOut.new)
 output.use_strategy('jsonout.json', planes)
+
+#Output to postgresql
+output = Output.new(PgOut.new)
+output.use_strategy('planes',planes)
