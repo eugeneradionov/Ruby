@@ -60,10 +60,9 @@ id SERIAL PRIMARY KEY,
 name TEXT NOT NULL,
 type TEXT,
 nation TEXT,
-epoch TEXT)")
-    conn.exec("TRUNCATE catalog")
+epoch TEXT);")
+    conn.exec("TRUNCATE catalog;")
     array.each do |x|
-      #x.name.gsub!('"', '""')
       x.name.gsub!("'", "''")
       x.nation.gsub!("'", "''")
       conn.transaction do |c|
@@ -76,7 +75,6 @@ epoch TEXT)")
   end
   implements OutputStrategy
 end
-
 class Output
   attr_accessor :output_strategy
   def initialize (output_strategy)
@@ -99,47 +97,7 @@ class Planes
   attr_reader :name, :type, :nation, :epoch
 end
 urls = [
-    ['http://wp.scn.ru/ru/ww1/f/', 'Fighter', 'World War I'],
-    ['http://wp.scn.ru/ru/ww1/b/', 'Bomber', 'World War I'],
-    ['http://wp.scn.ru/ru/ww1/a/', 'Attack', 'World War I'],
-    ['http://wp.scn.ru/ru/ww1/t/', 'Transport', 'World War I'],
-    ['http://wp.scn.ru/ru/ww1/o/', 'Other', 'World War I'],
-    ['http://wp.scn.ru/ru/ww1/h/', 'Sea', 'World War I'],
-    ['http://wp.scn.ru/ru/ww1/s/', 'Special', 'World War I'],
-    ['http://wp.scn.ru/ru/ww1/v/', 'Helicopter', 'World War I'],
-    ['http://wp.scn.ru/ru/ww15/f/', 'Fighter', 'Interwar'],
-    ['http://wp.scn.ru/ru/ww15/b/', 'Bomber', 'Interwar'],
-    ['http://wp.scn.ru/ru/ww15/a/', 'Attack', 'Interwar'],
-    ['http://wp.scn.ru/ru/ww15/t/', 'Transport', 'Interwar'],
-    ['http://wp.scn.ru/ru/ww15/o/', 'Other', 'Interwar'],
-    ['http://wp.scn.ru/ru/ww15/h/', 'Sea', 'Interwar'],
-    ['http://wp.scn.ru/ru/ww15/s/', 'Special', 'Interwar'],
-    ['http://wp.scn.ru/ru/ww15/v/', 'Helicopter', 'Interwar'],
-    ['http://wp.scn.ru/ru/ww2/f/', 'Fighter', 'World War II'],
-    ['http://wp.scn.ru/ru/ww2/b/', 'Bomber', 'World War II'],
-    ['http://wp.scn.ru/ru/ww2/a/', 'Attack', 'World War II'],
-    ['http://wp.scn.ru/ru/ww2/t/', 'Transport', 'World War II'],
-    ['http://wp.scn.ru/ru/ww2/o/', 'Other', 'World War II'],
-    ['http://wp.scn.ru/ru/ww2/h/', 'Sea', 'World War II'],
-    ['http://wp.scn.ru/ru/ww2/s/', 'Special', 'World War II'],
-    ['http://wp.scn.ru/ru/ww2/v/', 'Helicopter', 'World War II'],
-    ['http://wp.scn.ru/ru/ww3/f/', 'Fighter', 'Cold War'],
-    ['http://wp.scn.ru/ru/ww3/b/', 'Bomber', 'Cold War'],
-    ['http://wp.scn.ru/ru/ww3/a/', 'Attack', 'Cold War'],
-    ['http://wp.scn.ru/ru/ww3/t/', 'Transport', 'Cold War'],
-    ['http://wp.scn.ru/ru/ww3/o/', 'Other', 'Cold War'],
     ['http://wp.scn.ru/ru/ww3/h/', 'Sea', 'Cold War'],
-    ['http://wp.scn.ru/ru/ww3/s/', 'Special', 'Cold War'],
-    ['http://wp.scn.ru/ru/ww3/v/', 'Helicopter', 'Cold War'],
-    ['http://wp.scn.ru/ru/ww4/f/', 'Fighter', 'Modern'],
-    ['http://wp.scn.ru/ru/ww4/b/', 'Bomber', 'Modern'],
-    ['http://wp.scn.ru/ru/ww4/a/', 'Attack', 'Modern'],
-    ['http://wp.scn.ru/ru/ww4/t/', 'Transport', 'Modern'],
-    ['http://wp.scn.ru/ru/ww4/o/', 'Other', 'Modern'],
-    ['http://wp.scn.ru/ru/ww4/h/', 'Sea', 'Modern'],
-    ['http://wp.scn.ru/ru/ww4/s/', 'Special', 'Modern'],
-    ['http://wp.scn.ru/ru/ww4/v/', 'Helicopter', 'Modern'],
-    ['http://wp.scn.ru/ru/ww4/d/', 'Drone', 'Modern']
 ]
 
 planes_regex = /<a\shref=(?<url>[^>]*)>(?<name>[^<]*)<\/a>\s?\[\d+\]<br>/
@@ -187,13 +145,7 @@ end
 
 time_download = (Time.now - start_download).to_i
 p "Fetched #{count_of_pages} pages in #{time_download} seconds."
-#Output into csv and json files
-output = Output.new(CsvOut.new)
-output.use_strategy('output.csv', planes)
 
-output = Output.new(JsonOut.new)
-output.use_strategy('jsonout.json', planes)
-
-#Output to postgresql
+#Output into postgresql
 output = Output.new(PostgresqlOut.new)
 output.use_strategy('planes',planes)
