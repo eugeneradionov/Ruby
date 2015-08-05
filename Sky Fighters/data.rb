@@ -55,16 +55,19 @@ class PostgresqlOut
   def use(database_name, array)
     start = Time.now
     conn = PG.connect(dbname: database_name)
-    conn.exec("CRATE TABLE IF NOT EXISTS catalog (
+    conn.exec("CREATE TABLE IF NOT EXISTS catalog (
 id SERIAL PRIMARY KEY,
 name TEXT NOT NULL,
-type TEXT,nation TEXT,
+type TEXT,
+nation TEXT,
 epoch TEXT);")
     conn.exec("TRUNCATE catalog;")
     array.each do |x|
       x.name.gsub!('"', '""')
-      conn.exec( "INSERT INTO catalog (name, type, nation, epoch)
-      VALUES #{x.name},#{x.type},#{x.nation},#{x.epoch};")
+      conn.transaction do |c|
+        c.exec( "INSERT INTO catalog (name, type, nation, epoch)
+        VALUES '#{x.name}','#{x.type}','#{x.nation}','#{x.epoch}';")
+      end
     end
     time = (Time.now - start).to_i
     p "Export to PostgreSQL: committed #{array.size} records in #{time} seconds"
