@@ -51,7 +51,8 @@ class CsvOut
   implements OutputStrategy
 end
 
-class PostgresqlOut
+class PostgresDirect
+
   def connect(database_name)
     @conn = PG.connect(dbname: database_name, host: 'localhost', user: 'planes', password: '123', port: '5432')
   end
@@ -83,10 +84,13 @@ epoch TEXT);")
   def disconnect
     @conn.close
   end
+end
+
+class PostgresqlOut
 
   def use(database_name, array)
     start = Time.now
-    postgre_out = PostgresqlOut.new
+    postgre_out = PostgresDirect.new
     postgre_out.connect(database_name)
     begin
       postgre_out.new_table
