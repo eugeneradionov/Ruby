@@ -15,8 +15,8 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/ Sky Fighters@data.coverage" NAME="data Coverage Results" MODIFIED="1435765772395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME=" Sky Fighters" />
-    <SUITE FILE_PATH="coverage/Sky Fighters@pg_test.coverage" NAME="pg_test Coverage Results" MODIFIED="1438789807328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Sky Fighters" />
-    <SUITE FILE_PATH="coverage/Sky Fighters@data__1_.coverage" NAME="data (1) Coverage Results" MODIFIED="1438789833740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Sky Fighters" />
+    <SUITE FILE_PATH="coverage/Sky Fighters@pg_test.coverage" NAME="pg_test Coverage Results" MODIFIED="1438862870454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Sky Fighters" />
+    <SUITE FILE_PATH="coverage/Sky Fighters@data__1_.coverage" NAME="data (1) Coverage Results" MODIFIED="1438862955274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Sky Fighters" />
     <SUITE FILE_PATH="coverage/Sky Fighters@data.coverage" NAME="data Coverage Results" MODIFIED="1436295537622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME=" Sky Fighters" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -32,10 +32,14 @@
         <entry file="file://$PROJECT_DIR$/pg_test.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="31" />
+              <caret line="51" column="3" selection-start-line="51" selection-start-column="3" selection-end-line="51" selection-end-column="3" />
               <folding>
                 <element signature="e#198#684#0" expanded="false" />
                 <element signature="e#686#1223#0" expanded="false" />
+                <element signature="e#2425#2639#0" expanded="false" />
+                <element signature="e#2641#2845#0" expanded="false" />
+                <element signature="e#3095#3465#0" expanded="false" />
+                <element signature="e#3467#3736#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -44,13 +48,15 @@
       <file leaf-file-name="data.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64878047">
-              <caret line="66" column="25" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.30731708">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="e#198#684#0" expanded="false" />
                 <element signature="e#686#1223#0" expanded="false" />
-                <element signature="e#2015#2230#0" expanded="false" />
-                <element signature="e#2232#2436#0" expanded="false" />
+                <element signature="e#2424#2639#0" expanded="false" />
+                <element signature="e#2641#2845#0" expanded="false" />
+                <element signature="e#5487#5857#0" expanded="false" />
+                <element signature="e#5859#6128#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -128,7 +134,7 @@
     <property name="recentsLimit" value="5" />
     <property name="last.edited.regexp" value="Sample Text" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pg_test.rb" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.21645446" />
   </component>
@@ -229,7 +235,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="30" width="1368" height="739" extended-state="7" />
+    <frame x="-1" y="30" width="1368" height="739" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20967741" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -282,6 +288,25 @@
           <folding>
             <element signature="e#198#684#0" expanded="false" />
             <element signature="e#686#1223#0" expanded="false" />
+            <element signature="e#2425#2639#0" expanded="false" />
+            <element signature="e#2641#2845#0" expanded="false" />
+            <element signature="e#3095#3465#0" expanded="false" />
+            <element signature="e#3467#3736#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pg_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#198#684#0" expanded="false" />
+            <element signature="e#686#1223#0" expanded="false" />
+            <element signature="e#2425#2639#0" expanded="false" />
+            <element signature="e#2641#2845#0" expanded="false" />
+            <element signature="e#3095#3465#0" expanded="false" />
+            <element signature="e#3467#3736#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -293,8 +318,10 @@
           <folding>
             <element signature="e#198#684#0" expanded="false" />
             <element signature="e#686#1223#0" expanded="false" />
-            <element signature="e#2015#2230#0" expanded="false" />
-            <element signature="e#2232#2436#0" expanded="false" />
+            <element signature="e#2424#2639#0" expanded="false" />
+            <element signature="e#2641#2845#0" expanded="false" />
+            <element signature="e#5487#5857#0" expanded="false" />
+            <element signature="e#5859#6128#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -306,6 +333,10 @@
           <folding>
             <element signature="e#198#684#0" expanded="false" />
             <element signature="e#686#1223#0" expanded="false" />
+            <element signature="e#2425#2639#0" expanded="false" />
+            <element signature="e#2641#2845#0" expanded="false" />
+            <element signature="e#3095#3465#0" expanded="false" />
+            <element signature="e#3467#3736#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -317,8 +348,10 @@
           <folding>
             <element signature="e#198#684#0" expanded="false" />
             <element signature="e#686#1223#0" expanded="false" />
-            <element signature="e#2015#2230#0" expanded="false" />
-            <element signature="e#2232#2436#0" expanded="false" />
+            <element signature="e#2424#2639#0" expanded="false" />
+            <element signature="e#2641#2845#0" expanded="false" />
+            <element signature="e#5487#5857#0" expanded="false" />
+            <element signature="e#5859#6128#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -330,6 +363,10 @@
           <folding>
             <element signature="e#198#684#0" expanded="false" />
             <element signature="e#686#1223#0" expanded="false" />
+            <element signature="e#2425#2639#0" expanded="false" />
+            <element signature="e#2641#2845#0" expanded="false" />
+            <element signature="e#3095#3465#0" expanded="false" />
+            <element signature="e#3467#3736#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -341,8 +378,10 @@
           <folding>
             <element signature="e#198#684#0" expanded="false" />
             <element signature="e#686#1223#0" expanded="false" />
-            <element signature="e#2015#2230#0" expanded="false" />
-            <element signature="e#2232#2436#0" expanded="false" />
+            <element signature="e#2424#2639#0" expanded="false" />
+            <element signature="e#2641#2845#0" expanded="false" />
+            <element signature="e#5487#5857#0" expanded="false" />
+            <element signature="e#5859#6128#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -354,6 +393,10 @@
           <folding>
             <element signature="e#198#684#0" expanded="false" />
             <element signature="e#686#1223#0" expanded="false" />
+            <element signature="e#2425#2639#0" expanded="false" />
+            <element signature="e#2641#2845#0" expanded="false" />
+            <element signature="e#3095#3465#0" expanded="false" />
+            <element signature="e#3467#3736#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -365,6 +408,10 @@
           <folding>
             <element signature="e#198#684#0" expanded="false" />
             <element signature="e#686#1223#0" expanded="false" />
+            <element signature="e#2425#2639#0" expanded="false" />
+            <element signature="e#2641#2845#0" expanded="false" />
+            <element signature="e#3095#3465#0" expanded="false" />
+            <element signature="e#3467#3736#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -376,6 +423,10 @@
           <folding>
             <element signature="e#198#684#0" expanded="false" />
             <element signature="e#686#1223#0" expanded="false" />
+            <element signature="e#2425#2639#0" expanded="false" />
+            <element signature="e#2641#2845#0" expanded="false" />
+            <element signature="e#3095#3465#0" expanded="false" />
+            <element signature="e#3467#3736#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -642,23 +693,29 @@
     <entry file="file://$PROJECT_DIR$/pg_test.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="31" />
+          <caret line="51" column="3" selection-start-line="51" selection-start-column="3" selection-end-line="51" selection-end-column="3" />
           <folding>
             <element signature="e#198#684#0" expanded="false" />
             <element signature="e#686#1223#0" expanded="false" />
+            <element signature="e#2425#2639#0" expanded="false" />
+            <element signature="e#2641#2845#0" expanded="false" />
+            <element signature="e#3095#3465#0" expanded="false" />
+            <element signature="e#3467#3736#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64878047">
-          <caret line="66" column="25" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.30731708">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="e#198#684#0" expanded="false" />
             <element signature="e#686#1223#0" expanded="false" />
-            <element signature="e#2015#2230#0" expanded="false" />
-            <element signature="e#2232#2436#0" expanded="false" />
+            <element signature="e#2424#2639#0" expanded="false" />
+            <element signature="e#2641#2845#0" expanded="false" />
+            <element signature="e#5487#5857#0" expanded="false" />
+            <element signature="e#5859#6128#0" expanded="false" />
           </folding>
         </state>
       </provider>

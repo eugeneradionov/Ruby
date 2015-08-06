@@ -52,24 +52,50 @@ class CsvOut
 end
 
 class PostgresqlOut
-  def use(database_name, array)
-    start = Time.now
-    conn = PG.connect(dbname: database_name, host: 'localhost', user: 'planes', password: '123')
-    conn.exec("CREATE TABLE IF NOT EXISTS catalog (
+  def connect(database_name)
+    @conn = PG.connect(dbname: database_name, host: 'localhost', user: 'planes', password: '123', port: '5432')
+  end
+
+  def new_table
+    @conn.exec("CREATE TABLE IF NOT EXISTS catalog (
 id SERIAL PRIMARY KEY,
 name TEXT NOT NULL,
 type TEXT,
 nation TEXT,
-epoch TEXT)")
-    conn.exec("TRUNCATE catalog")
-    array.each do |x|
-      #x.name.gsub!('"', '""')
-      x.name.gsub!("'", "''")
-      x.nation.gsub!("'", "''")
-      conn.transaction do |c|
+epoch TEXT);")
+  end
+
+  def clear_table
+    @conn.exec("TRUNCATE catalog;")
+  end
+
+  def query(array)
+    @conn.transaction do |c|
+      array.each do |x|
+        x.name.gsub!("'", "''")
+        x.nation.gsub!("'", "''")
         c.exec( "INSERT INTO catalog (name, type, nation, epoch)
         VALUES ('#{x.name}','#{x.type}','#{x.nation}','#{x.epoch}')")
       end
+    end
+  end
+
+  def disconnect
+    @conn.close
+  end
+
+  def use(database_name, array)
+    start = Time.now
+    postgre_out = PostgresqlOut.new
+    postgre_out.connect(database_name)
+    begin
+      postgre_out.new_table
+      postgre_out.clear_table
+      postgre_out.query(array)
+    rescue Exception => e
+      p e.message
+    ensure
+      postgre_out.disconnect
     end
     time = (Time.now - start).to_i
     p "Export to PostgreSQL: committed #{array.size} records in #{time} seconds"
